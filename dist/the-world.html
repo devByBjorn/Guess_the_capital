@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Crete+Round|Roboto+Slab&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media-queries.css">
+  <link rel="stylesheet" href="css/light-switch.css">
+  <title>World - Guess the Place</title>
+</head>
+
+<body>
+
+  <main id="main-body">
+
+    <!--Light switch - found in light-switch.css and lightSwitch.js-->
+    <div id="switch-and-icons">
+      <div class="switch-and-icons-container">
+        <div class="left icon-arrow">
+          <a href="index.html"><i class="fas fa-angle-left"></i></a>
+        </div>
+        <div class="switch-container">
+          <label id="switch">
+            <input type="checkbox" onchange="toggleTheme()" id="slider">
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="right-icon">
+          <i class="fas fa-globe"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center">
+      <!-- Headings-->
+      <heading id="headings">
+        <h1 class="main-heading region">World</h1>
+        <h2 class="sub-heading instructions">
+          <span class="mobile-text">Use the letters below to make a guess</span>
+          <span class="desktop-text">Use your keyboard to make a guess.</span>
+          <span class="spelling">The only special character used in this game is dash ('-') </span>
+        </h2>
+        <div class="line-break"></div>
+      </heading>
+      <!-- Puzzle Word coming from gameScript.js(get Puzzle) and updates in app.js(render), DOM manipulation from app.js(puzzleAndGuessesLeft) -->
+      <div id="puzzle"></div>
+      <!-- <section id="content-container"> -->
+
+      <!-- Alert message when other key than a-z is clicked -->
+      <div id="status-alert-container">
+        <div class="alert-box">
+          <i class="fas fa-ban"></i>
+          <p>Oops! Only letters included in the English alphabet. Continue by guessing a letter.</p>
+        </div>
+        <!-- Status update coming from gameScript.js(get StatusMessage, calculateStatus) and DOM manipulation from app.js   (puzzleAndGuessesLeft) -->
+        <div class="status-box">
+          <div class="status"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="keyboard-container">
+      <p><span class="desktop-text">Letters</span></p>
+      <!-- DOM manipualtion is found in app.js(), bottom of script under comment 'DOM keyboard interaction'-->
+      <div class="keyboard-row one">
+        <span id="q" class="letter">q</span>
+        <span id="w" class="letter">w</span>
+        <span id="e" class="letter">e</span>
+        <span id="r" class="letter">r</span>
+        <span id="t" class="letter">t</span>
+        <span id="y" class="letter">y</span>
+        <span id="u" class="letter">u</span>
+        <span id="i" class="letter">i</span>
+        <span id="o" class="letter">o</span>
+        <span id="p" class="letter">p</span>
+        <!--<span id="å" class="letter">å</span>-->
+        <!-- Adding Swedish letter 'å' to keyboard-->
+      </div>
+      <div class="keyboard-row two">
+        <span id="a" class="letter">a</span>
+        <span id="s" class="letter">s</span>
+        <span id="d" class="letter">d</span>
+        <span id="f" class="letter">f</span>
+        <span id="g" class="letter">g</span>
+        <span id="h" class="letter">h</span>
+        <span id="j" class="letter">j</span>
+        <span id="k" class="letter">k</span>
+        <span id="l" class="letter">l</span>
+        <!-- <span id="ö" class="letter">ö</span>
+              <span id="ä" class="letter">ä</span> -->
+        <!-- Adding Swedish letters 'ä' 'ö' to keyboard-->
+      </div>
+
+      <div class="keyboard-row three">
+        <span id="z" class="letter">z</span>
+        <span id="x" class="letter">x</span>
+        <span id="c" class="letter">c</span>
+        <span id="v" class="letter">v</span>
+        <span id="b" class="letter">b</span>
+        <span id="n" class="letter">n</span>
+        <span id="m" class="letter">m</span>
+        <span id="-" class="letter">-</span>
+      </div>
+      <!-- DOM manipualtion is found in app.js(), bottom om script under comment 'DOM keyboard interaction'-->
+      <button class="reset-button btn">Reset</button>
+  </main>
+  <script src="https://kit.fontawesome.com/9f0bfe41d9.js"></script>
+  <script src="js/request.js"></script>
+  <script src="js/lightSwitch.js"></script>
+  <script src="js/gameScript.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

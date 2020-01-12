@@ -1,0 +1,225 @@
+/* iPhone X Portrait */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) {
+  #headings {
+    margin-bottom: 5rem;
+  }
+
+  #keyboard-container {
+    position: absolute;
+    bottom: 4rem;
+    right: 0;
+    left: 0;
+  }
+
+  .keyboard-row .letter {
+    margin: .6rem .3rem;
+  }
+
+  #categories ul {
+    margin-top: -5rem;
+  }
+}
+
+/* iPhone X landscape*/
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px) 
+and (orientation : landscape) {
+  #headings {
+    margin-top: 1rem;
+  }
+
+   #puzzle {
+    margin-bottom: 0;
+    margin-top: 4rem;
+  } 
+
+  /* Keyboard*/
+  .keyboard-row .letter {
+    margin: .4rem;
+    width: 6.5rem;
+  }
+} 
+
+/* iPhone 6/7/8 plus*/
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px)
+and (orientation : landscape) { 
+  
+  .keyboard-row .letter {
+    margin: .5rem;
+    width: 5.5rem;
+  }
+}
+
+/* iPhone 6  */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px)
+and (orientation : portrait) {
+  #keyboard-container {
+    position: absolute;
+    bottom: 2rem;
+    right: 0;
+    left: 0;
+  }
+  
+   .status {
+    padding-bottom: 4rem;
+  }
+}
+
+/* iPad Portrait*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+
+  #categories ul {
+    margin-top: 5rem;
+  }
+
+  .container {
+    margin-top: 10rem;
+    }
+
+  #keyboard-container {
+    position: absolute;
+    bottom: 4rem;
+    right: 0;
+    left: 0;
+    padding-top: 10rem;
+  }
+
+  #keyboard-container p {
+    font-size: 2rem;
+  }
+
+  .keyboard-row .letter {
+    margin: .5rem;
+    width: 6rem;
+  }
+
+  .btn {
+    width: 25rem;
+    height: 5rem;
+  }
+}
+
+/* iPad Landscape */
+@media only screen 
+and (min-device-width : 813px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) { 
+
+  #keyboard-container {
+    position: absolute;
+    bottom: 4rem;
+    right: 0;
+    left: 0;
+  }
+
+  #keyboard-container p {
+    font-size: 2rem;
+  }
+  .keyboard-row .letter {
+    margin: .5rem;
+    width: 8rem;
+    height: 5rem;
+  }
+  .btn {
+    width: 25rem;
+    height: 5rem;
+  }
+}
+
+
+/*Desktop */
+@media(min-width: 1025px) {
+  /* Landing page*/
+  #categories ul {
+    margin-top: 5rem;
+  }
+
+  #categories ul li a:hover {
+    cursor: pointer;
+    background: var(--btn-hover);
+  }
+
+  #main-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  /* Guessing page */
+  #main-body{
+    min-height: 80rem;
+    max-width: 40rem;
+    margin-top: 5rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+  }
+ 
+  /* Display keyboard instructions and "Letters used:" */
+
+  #headings {
+    margin-top: 0;
+  }
+  
+ #headings .desktop-text {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+  }
+
+ #headings .mobile-text {
+    display: none;
+  }
+
+  #puzzle {
+    margin-top: 5rem;
+  }
+
+  .letter {
+    opacity: 0.2;
+    visibility: hidden;
+    transition: all .5s ease;
+  }
+
+  /* Visibility added when key pressed - app.js( lightUpKey() ) */
+  .add-visibility {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  #keyboard-container {
+    position: relative;
+  }
+
+
+  .keyboard-row {
+    margin: 1rem 0;
+  }
+
+  .keyboard-row .letter {
+    margin: 0 .5rem;
+  }
+
+  .btn {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .btn:hover {
+    cursor: pointer;
+  }
+
+}
+

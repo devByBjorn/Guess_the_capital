@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description"
+    content="Guess the Capital is a geography game based on the concept Hangman. The game tests your word knowledge of capitals of the world; territories, countries, and administrative units.">
+  <link href="https://fonts.googleapis.com/css?family=Crete+Round|Roboto+Slab&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media-queries.css">
+  <link rel="stylesheet" href="css/light-switch.css">
+  <title>Guess the Capital</title>
+</head>
+
+<body>
+  <main id="main-body">
+    <!--Light switch - found in light-switch.css and lightSwitch.js-->
+    <div id="switch-and-icons">
+      <div class="switch-and-icons-container">
+        <div class="left icon-arrow">
+          <a href="index.html"><i class="fas fa-globe"></i></a>
+        </div>
+        <div class="switch-container">
+          <label id="switch">
+            <input type="checkbox" onchange="toggleTheme()" id="slider">
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="right-pin">
+          <i class="fas fa-map-pin"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center">
+      <div id="headings">
+        <h1 class="main-heading">Guess <span>the</span>Capital</h1>
+        <h2 class="sub-heading instructions">
+          Choose a region and start guessing
+        </h2>
+      </div>
+
+      <div id="categories">
+        <ul>
+          <li><a href="africa.html#africa" class="category-btn">Africa</a></li>
+          <li><a href="americas.html#americas" class="category-btn">Americas</a></li>
+          <li><a href="asia.html#asia" class="category-btn">Asia</a></li>
+          <li><a href="europe.html#europe" class="category-btn">Europe</a></li>
+          <li><a href="oceania.html#oceania" class="category-btn">Oceania</a></li>
+          <li><a href="the-world.html#all" class="category-btn">The World</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </main>
+
+  <footer id="main-footer">
+    <p>A game by Björn Carell</p>
+  </footer>
+  <script src="https://kit.fontawesome.com/9f0bfe41d9.js"></script>
+  <script src="js/lightSwitch.js"></script>
+  <script src="js/gameScript.js"></script>
+</body>
+
+</html>
