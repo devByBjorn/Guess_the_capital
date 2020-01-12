@@ -47,7 +47,7 @@ const getGame = async () => {
   render()
 }
 
-addEventListener('load', getGame)
+window.addEventListener('load', getGame)
 
 // DOM keyboard interaction
 const lightUpKey = (e) => {
