@@ -67,7 +67,6 @@ a {
 #categories {
   display: flex;
   flex-direction: column;
-  max-width: 72rem;
   margin: 0 auto;
   padding-top: 2rem;
   /* margin: 2.5rem; */
@@ -95,6 +94,7 @@ a {
   justify-content: center;
   align-items: center;
   height: 5rem;
+  background-color: var(--color-bg);
   color: var(--letter-color);
   border-top: 1px solid var(--letter-bg);
   font-size: 1.2rem;
