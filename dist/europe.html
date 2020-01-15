@@ -60,52 +60,51 @@
           <div class="status"></div>
         </div>
       </div>
-    </div>
+      <div id="keyboard-container">
+        <p><span class="desktop-text">Letters</span></p>
+        <!-- DOM manipualtion is found in app.js(), bottom of script under comment 'DOM keyboard interaction'-->
+        <div class="keyboard-row one">
+          <span id="q" class="letter">q</span>
+          <span id="w" class="letter">w</span>
+          <span id="e" class="letter">e</span>
+          <span id="r" class="letter">r</span>
+          <span id="t" class="letter">t</span>
+          <span id="y" class="letter">y</span>
+          <span id="u" class="letter">u</span>
+          <span id="i" class="letter">i</span>
+          <span id="o" class="letter">o</span>
+          <span id="p" class="letter">p</span>
+          <!--<span id="å" class="letter">å</span>-->
+          <!-- Adding Swedish letter 'å' to keyboard-->
+        </div>
+        <div class="keyboard-row two">
+          <span id="a" class="letter">a</span>
+          <span id="s" class="letter">s</span>
+          <span id="d" class="letter">d</span>
+          <span id="f" class="letter">f</span>
+          <span id="g" class="letter">g</span>
+          <span id="h" class="letter">h</span>
+          <span id="j" class="letter">j</span>
+          <span id="k" class="letter">k</span>
+          <span id="l" class="letter">l</span>
+          <!-- <span id="ö" class="letter">ö</span>
+                <span id="ä" class="letter">ä</span> -->
+          <!-- Adding Swedish letters 'ä' 'ö' to keyboard-->
+        </div>
 
-    <div id="keyboard-container">
-      <p><span class="desktop-text">Letters</span></p>
-      <!-- DOM manipualtion is found in app.js(), bottom of script under comment 'DOM keyboard interaction'-->
-      <div class="keyboard-row one">
-        <span id="q" class="letter">q</span>
-        <span id="w" class="letter">w</span>
-        <span id="e" class="letter">e</span>
-        <span id="r" class="letter">r</span>
-        <span id="t" class="letter">t</span>
-        <span id="y" class="letter">y</span>
-        <span id="u" class="letter">u</span>
-        <span id="i" class="letter">i</span>
-        <span id="o" class="letter">o</span>
-        <span id="p" class="letter">p</span>
-        <!--<span id="å" class="letter">å</span>-->
-        <!-- Adding Swedish letter 'å' to keyboard-->
+        <div class="keyboard-row three">
+          <span id="z" class="letter">z</span>
+          <span id="x" class="letter">x</span>
+          <span id="c" class="letter">c</span>
+          <span id="v" class="letter">v</span>
+          <span id="b" class="letter">b</span>
+          <span id="n" class="letter">n</span>
+          <span id="m" class="letter">m</span>
+          <span id="-" class="letter">-</span>
+        </div>
+        <!-- DOM manipualtion is found in app.js(), bottom om script under comment 'DOM keyboard interaction'-->
+        <button class="reset-button btn">Reset</button>
       </div>
-      <div class="keyboard-row two">
-        <span id="a" class="letter">a</span>
-        <span id="s" class="letter">s</span>
-        <span id="d" class="letter">d</span>
-        <span id="f" class="letter">f</span>
-        <span id="g" class="letter">g</span>
-        <span id="h" class="letter">h</span>
-        <span id="j" class="letter">j</span>
-        <span id="k" class="letter">k</span>
-        <span id="l" class="letter">l</span>
-        <!-- <span id="ö" class="letter">ö</span>
-              <span id="ä" class="letter">ä</span> -->
-        <!-- Adding Swedish letters 'ä' 'ö' to keyboard-->
-      </div>
-
-      <div class="keyboard-row three">
-        <span id="z" class="letter">z</span>
-        <span id="x" class="letter">x</span>
-        <span id="c" class="letter">c</span>
-        <span id="v" class="letter">v</span>
-        <span id="b" class="letter">b</span>
-        <span id="n" class="letter">n</span>
-        <span id="m" class="letter">m</span>
-        <span id="-" class="letter">-</span>
-      </div>
-      <!-- DOM manipualtion is found in app.js(), bottom om script under comment 'DOM keyboard interaction'-->
-      <button class="reset-button btn">Reset</button>
   </main>
   <script src="https://kit.fontawesome.com/9f0bfe41d9.js"></script>
   <script src="js/request.js"></script>

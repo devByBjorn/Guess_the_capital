@@ -37,6 +37,8 @@ html {
   --alert-red: rgb(252, 83, 83);
   --status-orange: rgb(250, 121, 1);
   --status-green: #22a011;
+
+  --padding-top: 2rem; 
 }
 
 body {
@@ -59,7 +61,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  min-height: 45rem;
+  min-height: 90vh;
   padding-top: 0 2rem 0 1rem;
 }
 
@@ -90,6 +92,10 @@ a {
 }
 
 #main-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,7 +109,7 @@ a {
 /* Region inner pages and Main style*/
 #main-body {
   min-height: 90vh;
-  padding: 2rem 1rem;
+  padding: 1rem;
   margin: 0 auto;
 } 
 
@@ -111,7 +117,7 @@ a {
 /* switch and arrow*/
 #switch-and-icons {
   display: flex;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 .get-dark-light {
@@ -121,7 +127,6 @@ a {
 
 .switch-and-icons-container {
   width: 100%;
-  /* padding: 1rem; */
   display: inherit;
   align-items: center;
   justify-content: space-between;
@@ -203,7 +208,6 @@ a {
 #headings .main-heading {
   font-size: 3rem;
   letter-spacing: .5rem;
-  margin: 1.5rem 0;
 }
 
 #headings .main-heading span {
@@ -214,7 +218,7 @@ a {
 #headings .instructions {
   letter-spacing: .1rem;
   font-size: 1.5rem;
-  padding: 1.5rem;
+  padding-bottom: 1rem;
   font-weight: 200;
   max-width: 35rem;
 }
@@ -237,7 +241,7 @@ a {
 
 /* game status*/
 .status {
-  margin: 1.5rem auto;
+  margin: 0 auto;
   max-width: 20rem;
   min-height: 5rem;
   font-size: 1.8rem;
