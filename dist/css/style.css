@@ -216,6 +216,7 @@ a {
 }
 
 #headings .instructions {
+  margin: auto;
   letter-spacing: .1rem;
   font-size: 1.5rem;
   padding-bottom: 1rem;
