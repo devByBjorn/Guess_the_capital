@@ -62,7 +62,7 @@ a {
   flex-direction: column;
   justify-content: space-around;
   min-height: 90vh;
-  padding-top: 0 2rem 0 1rem;
+  padding-top: 0rem 2rem 0 1rem;
 }
 
 /* Landing page specifics*/
@@ -70,8 +70,6 @@ a {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding-top: 2rem;
-  /* margin: 2.5rem; */
 }
 
 #categories ul li {
@@ -110,7 +108,7 @@ a {
 #main-body {
   min-height: 90vh;
   padding: 1rem;
-  margin: 0 auto;
+  margin: 1rem auto;
 } 
 
 
@@ -201,13 +199,10 @@ a {
   box-shadow: 0 5px 5px -5px #2196f3;
 }
 
-#headings span {
-  display: block;
-}
-
 #headings .main-heading {
   font-size: 3rem;
   letter-spacing: .5rem;
+  padding-bottom: 1rem;
 }
 
 #headings .main-heading span {
@@ -279,6 +274,7 @@ a {
   margin: 0 auto;
   max-width: 40rem;
   word-wrap: break-word;
+  margin-top: -5;
 }
 
 /* the alphabet */
@@ -286,6 +282,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: -5;
 }
 
 #keyboard-container p {

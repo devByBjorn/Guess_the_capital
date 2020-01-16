@@ -128,7 +128,7 @@ and (orientation : landscape) {
   }
 
   #categories {
-    padding-top: 5rem;
+    padding-top: 10rem;
   }
 
   #categories ul li a:hover {
@@ -145,24 +145,24 @@ and (orientation : landscape) {
 
   /* Guessing page */
   #main-body{
-    min-height: 65rem;
-    max-height: 65rem;
+    min-height: 70rem;
+    max-height: 70rem;
     max-width: 40rem;
+    padding: 2rem;
     margin-top: 5rem;
     border: 1px solid #333;
     border-radius: 5px;
   }
  
   /* Display keyboard instructions and "Letters used:" */
-
-  #headings {
-    margin-top: 0;
-  }
-  
  #headings .desktop-text {
     display: inline-block;
     font-size: 1.5rem;
     margin-bottom: .5rem;
+  }
+
+  #headings .instructions {
+    padding-bottom: 5rem;
   }
 
  #headings .mobile-text {
