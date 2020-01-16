@@ -128,7 +128,7 @@ and (orientation : landscape) {
   }
 
   #categories {
-    padding-top: 10rem;
+    padding-top: 2rem;
   }
 
   #categories ul li a:hover {
