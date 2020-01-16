@@ -236,10 +236,14 @@ a {
 }
 
 /* game status*/
+
+.status-alert-container {
+  margin-bottom: -10rem;
+}
+
 .status {
   margin: 0 auto;
   max-width: 20rem;
-  min-height: 5rem;
   font-size: 1.8rem;
 }
 
@@ -279,10 +283,9 @@ a {
 
 /* the alphabet */
 #keyboard-container {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   align-items: center;
-  margin-top: -5;
 }
 
 #keyboard-container p {

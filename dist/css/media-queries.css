@@ -29,17 +29,18 @@ and (orientation : landscape) {
   .keyboard-row .letter {
     margin: .4rem;
     width: 6.5rem;
+    height: 3.5rem;
   }
 } 
 
-/* iPhone 6/7/8 plus*/
+/* iPhone 6/7/8 plus Landscape*/
 @media only screen 
 and (min-device-width : 414px) 
 and (max-device-width : 736px)
 and (orientation : landscape) { 
   
   .keyboard-row .letter {
-    margin: .5rem;
+    margin: .2rem;
     width: 5.5rem;
   }
 }
@@ -128,7 +129,7 @@ and (orientation : landscape) {
   }
 
   #categories {
-    padding-top: 4rem;
+    padding-top: rem;
   }
 
   #categories ul li a:hover {
