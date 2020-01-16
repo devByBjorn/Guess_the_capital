@@ -63,14 +63,6 @@ and (orientation : portrait) {
     margin-top: 10rem;
     }
 
-  #keyboard-container {
-    position: absolute;
-    bottom: 4rem;
-    right: 0;
-    left: 0;
-    padding-top: 10rem;
-  }
-
   #keyboard-container p {
     font-size: 2rem;
   }
@@ -97,13 +89,6 @@ and (orientation : landscape) {
     flex-direction: column;
   }
 
-  #keyboard-container {
-    position: absolute;
-    bottom: 4rem;
-    right: 0;
-    left: 0;
-  }
-
   #keyboard-container p {
     font-size: 2rem;
   }
@@ -120,7 +105,7 @@ and (orientation : landscape) {
 
 
 /*Desktop */
-@media(min-width: 1025px) {
+@media(min-width: 1200px) {
   /* Landing page*/
 
   .container {
