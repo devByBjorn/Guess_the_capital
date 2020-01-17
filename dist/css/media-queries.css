@@ -13,7 +13,7 @@ and (orientation : portrait) {
   }
 }
 
-/* iPhone 6/7/8 Portrait */
+/* iPhone 6/7/8 --- Galaxy S9 Portrait */
 @media only screen
 and (min-width : 412px)
 and (max-height : 736px)
@@ -29,10 +29,10 @@ and (orientation : portrait) {
 }
 
 
-/* Galaxy */
+/* Galaxy +*/
 @media only screen
 and (min-width : 360px)
-and (height : 740px)
+and (height : 846px)
 and (orientation : portrait) {
   #puzzle {
     padding-top: 10rem;
