@@ -1,47 +1,66 @@
 /* iPhone X Portrait */
 @media only screen
-and (min-device-width : 375px)
-and (max-device-width : 812px)
-and (-webkit-device-pixel-ratio : 3)
+and (width : 375px)
+and (height : 812px)
 and (orientation : portrait) {
 
-  .keyboard-row .letter {
-    margin: .6rem .3rem;
+  #puzzle {
+    padding-top: 15rem;
   }
 
-  #categories ul {
-    margin-top: -15rem;
+  #keyboard-container {
+    padding-top: 15rem;
   }
 }
 
-/* iPhone X landscape*/
+/* iPhone 6/7/8 Portrait */
 @media only screen
-and (min-device-width : 375px)
-and (max-device-width : 812px) 
-and (orientation : landscape) {
+and (min-width : 414px)
+and (max-height : 736px)
+and (orientation : portrait) {
 
-   #puzzle {
-    margin-bottom: 0;
-    margin-top: 4rem;
-  } 
-
-  /* Keyboard*/
-  .keyboard-row .letter {
-    margin: .4rem;
-    width: 6.5rem;
-    height: 3.5rem;
+  #puzzle {
+    padding-top: 10rem;
   }
-} 
 
-/* iPhone 6/7/8 plus Landscape*/
-@media only screen 
-and (min-device-width : 414px) 
-and (max-device-width : 736px)
-and (orientation : landscape) { 
-  
+  #keyboard-container {
+    padding-top: 15rem;
+  }
+}
+
+
+/* iPhone X Portrait */
+@media only screen
+and (width : 360px)
+and (height : 740px)
+and (orientation : portrait) {
+  #puzzle {
+    padding-top: 10rem;
+  }
+
+  #keyboard-container {
+    padding-top: 15rem;
+  }
+}
+
+/* Mobile landscape*/
+@media(max-height:500px) {
+  #puzzle {
+    padding-top: 5rem;
+  }
+
+  #keyboard-container {
+    padding-top: 2rem;
+  }
+
   .keyboard-row .letter {
     margin: .2rem;
     width: 5.5rem;
+  }
+
+  .btn {
+    width: 30rem;
+    padding: 1.5rem 0;
   }
 }
 
@@ -56,11 +75,19 @@ and (orientation : portrait) {
   #categories ul {
     display: flex;
     flex-direction: column;
-    margin-top: 5rem;
   }
 
   .container {
-    margin-top: 10rem;
+    padding-top: 10rem;
+    }
+
+    #puzzle {
+      padding-top: 20rem;
+    }
+
+
+    #keyboard-container {
+      padding-top: 20rem;
     }
 
   #keyboard-container p {
@@ -84,6 +111,10 @@ and (min-device-width : 813px)
 and (max-device-width : 1024px) 
 and (orientation : landscape) { 
 
+  #headings {
+    padding-top: 6rem;
+  }
+  
   #categories ul {
     display: flex;
     flex-direction: column;
@@ -105,93 +136,24 @@ and (orientation : landscape) {
 
 
 /*Desktop */
-@media(min-width: 1200px) {
-  /* Landing page*/
-
-  .container {
-    padding-top: 5rem;
-    display: inline-block;
-  }
-
-  #categories {
-    padding-top: rem;
-  }
-
-  #categories ul li a:hover {
-    cursor: pointer;
-    background: var(--btn-hover);
-  }
-
-  #main-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-
-  /* Guessing page */
-  #main-body{
-    min-height: 70rem;
-    max-height: 70rem;
-    max-width: 40rem;
-    padding: 2rem;
-    margin-top: 5rem;
-    border: 1px solid #333;
-    border-radius: 5px;
-  }
- 
-  /* Display keyboard instructions and "Letters used:" */
- #headings .desktop-text {
-    display: inline-block;
-    font-size: 1.5rem;
-    margin-bottom: .5rem;
-  }
-
-  #headings .instructions {
-    padding-bottom: 5rem;
-  }
-
- #headings .mobile-text {
-    display: none;
-  }
-
-  #puzzle {
-    margin: 5rem 0;
-  }
-
-  .letter {
-    opacity: 0.2;
-    visibility: hidden;
-    transition: all .5s ease;
-  }
-
-  /* Visibility added when key pressed - app.js( lightUpKey() ) */
-  .add-visibility {
-    visibility: visible;
-    opacity: 1;
-  }
-
-  #keyboard-container {
-    position: relative;
-  }
 
 
-  .keyboard-row {
-    margin: 1rem 0;
-  }
 
-  .keyboard-row .letter {
-    margin: 0 .5rem;
-  }
+/* .alert-content .close-btn:hover,
+.alert-content .close-btn:focus {
+  cursor: pointer;
+} */
 
-  .btn {
-    padding: 1.5rem;
-    font-size: 1.5rem;
-  }
-
-  .btn:hover {
-    cursor: pointer;
-  }
-
+/* 
+#headings .instructions .desktop-text {
+  display: block;
 }
+
+#headings .instructions .mobile-text {
+  display: none;
+} */
+
+
+
+
 

@@ -57,10 +57,11 @@ a {
   text-align: center;
 }
 
+/* Main content container*/
+
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   min-height: 90vh;
   padding-top: 0rem 2rem 0 1rem;
 }
@@ -69,6 +70,7 @@ a {
 #categories {
   display: flex;
   flex-direction: column;
+  padding-top: 5rem;
   margin: 0 auto;
 }
 
@@ -89,28 +91,12 @@ a {
   /* box-shadow: var(--box-shadow) */
 }
 
-#main-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 5rem;
-  background-color: var(--color-bg);
-  color: var(--letter-color);
-  border-top: 1px solid var(--letter-bg);
-  font-size: 1.2rem;
-}
-
 /* Region inner pages and Main style*/
 #main-body {
   min-height: 90vh;
-  padding: 1rem;
+  padding: 1rem 2rem;
   margin: 1rem auto;
 } 
-
 
 /* switch and arrow*/
 #switch-and-icons {
@@ -194,6 +180,7 @@ a {
 /* heading */
 #headings {
   max-width: 40rem;
+  padding-top: 3rem;
   margin: 0 auto;
   border-bottom: 1px solid var(--main-color);
   box-shadow: 0 5px 5px -5px #2196f3;
@@ -219,13 +206,18 @@ a {
   max-width: 35rem;
 }
 
+#headings .instructions span {
+  display: block;
+}
+
+/* Do not display desktop instructions on mobile*/
+#headings .instructions .desktop-text {
+  display: none;
+}
+
 #headings .spelling {
   font-size: 1.1rem;
   margin-top: .5rem;
-}
-
-#headings .desktop-text {
-  display: none;
 }
 
 .far .fa-smile-beam,
@@ -237,10 +229,6 @@ a {
 
 /* game status*/
 
-.status-alert-container {
-  margin-bottom: -10rem;
-}
-
 .status {
   margin: 0 auto;
   max-width: 20rem;
@@ -248,23 +236,39 @@ a {
 }
 
 /* Alert square*/
-.alert-box {
-  position: absolute;
-  top: 10rem;
-  left: 5rem;
-  right: 5rem;
-  padding: 2rem;
-  max-width: 40rem;
-  font-size: 1.5rem;
-  margin: auto;
-  border-radius: .2rem;
-  background: var(--alert-red);
-  color: #fff;
+.alert-modal {
   display: none;
-  opacity: .95;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,.4);
 }
 
-.alert-box .fa-ban {
+.alert-content {
+  position: relative;
+  padding: 2rem;
+  width: 40rem;
+  font-size: 1.5rem;
+  margin: 15% auto;
+  border-radius: .2rem;
+  background-color: var(--alert-red);
+  color: #fff;
+}
+
+ .alert-content .close-btn {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.alert-modal .fa-ban {
  font-size: 5rem;
  margin-bottom: 1rem;
  box-shadow: none;
@@ -272,13 +276,13 @@ a {
 
 /* Puzzle - The Word*/
 #puzzle {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding-top: 10rem;
   font-size: 3rem;
   letter-spacing: .5rem;
   font-weight: 600;
-  margin: 0 auto;
-  max-width: 40rem;
   word-wrap: break-word;
-  margin-top: -5;
 }
 
 /* the alphabet */
@@ -286,6 +290,7 @@ a {
   /* display: flex; */
   flex-direction: column;
   align-items: center;
+  padding-top: 10rem;
 }
 
 #keyboard-container p {
@@ -343,3 +348,18 @@ a {
   box-shadow: var(--box-shadow);
 }
 
+/* Footer*/
+#main-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  background-color: var(--color-bg);
+  color: var(--letter-color);
+  border-top: 1px solid var(--letter-bg);
+  font-size: 1.2rem;
+}
