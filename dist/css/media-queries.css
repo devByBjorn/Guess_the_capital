@@ -9,13 +9,13 @@ and (orientation : portrait) {
   }
 
   #keyboard-container {
-    padding-top: 15rem;
+    padding-top: 12rem;
   }
 }
 
 /* iPhone 6/7/8 Portrait */
 @media only screen
-and (min-width : 414px)
+and (min-width : 412px)
 and (max-height : 736px)
 and (orientation : portrait) {
 
@@ -29,9 +29,9 @@ and (orientation : portrait) {
 }
 
 
-/* iPhone X Portrait */
+/* Galaxy */
 @media only screen
-and (width : 360px)
+and (min-width : 360px)
 and (height : 740px)
 and (orientation : portrait) {
   #puzzle {

@@ -32,6 +32,7 @@ const getGame = async () => {
       .replace('í', 'i'))
     console.log(game.word)
 
+    // Why do I get no word at all att some fetches? 
     if (game.word.length === 0) {
       render()
     }
@@ -47,6 +48,7 @@ const getGame = async () => {
       .replace('í', 'i'))
     console.log(game.word)
 
+    // Why do I get no word at all att some fetches? 
     if (game.word.length === 0) {
       render()
     }
