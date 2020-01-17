@@ -97,7 +97,7 @@ window.addEventListener('keypress', (e) => {
     hideOrDisplayByClass('.alert-modal', 'none')
 
     // restart game on enter and tab key
-  } else if (e.charCode === 13 || 9) {
+  } else if (e.charCode === 13 || e.charCode === 9) {
     animation()
     resetLetters()
     getGame()
