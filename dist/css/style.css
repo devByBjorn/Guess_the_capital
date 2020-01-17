@@ -88,7 +88,7 @@ a {
   border-radius: 5px;
   min-width: 30rem;
   font-size: 1.5rem;
-  /* box-shadow: var(--box-shadow) */
+  box-shadow: 1px 1px 2px;;
 }
 
 #categories ul li a:active {
