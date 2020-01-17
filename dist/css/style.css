@@ -343,15 +343,7 @@ a {
   background: var(--letter-bg);
   transition: all 0.5s ease;
   border:none;
-  box-shadow: 1px 1px 2px;;
-}
-
-
-.btn {
-  display: flex;
-  justify-content: center;
- 
- 
+  box-shadow: 1px 1px 2px;
 }
 
 .btn:active {

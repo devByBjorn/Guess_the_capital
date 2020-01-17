@@ -97,10 +97,9 @@ and (orientation : portrait) {
   }
 
   .reset-btn {
-    color:var(--letter-color);
-    background: var(--letter-bg);
-    width: 25rem;
+    width: 40rem;
     height: 5rem;
+    font-size: 2rem;
   }
 }
 
@@ -119,9 +118,6 @@ and (orientation : landscape) {
     flex-direction: column;
   }
 
-  #keyboard-container p {
-    font-size: 2rem;
-  }
   .keyboard-row .letter {
     margin: .5rem;
     width: 8rem;
@@ -129,8 +125,9 @@ and (orientation : landscape) {
   }
 
   .reset-btn {
-    width: 25rem;
-    height: 5rem;
+    width: 45rem;
+    height: 6rem;
+    font-size: 2rem;
   }
 }
 
