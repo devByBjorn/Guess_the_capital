@@ -329,27 +329,29 @@ a {
 }
 
 /* reset - Reset button*/
-.reset-button {
+.reset-btn {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 0 auto;
   margin-top: 1rem;
+  width: 18rem;
+  padding: 1rem;
+  border-radius: .5rem;
+  font-size: 1.4rem;
+  color:var(--letter-color);
+  background: var(--letter-bg);
+  transition: all 0.5s ease;
+  border:none;
+  box-shadow: 1px 1px 2px;;
 }
 
 
 .btn {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 18rem;
-  padding: 1rem;
-  border-radius: .5rem;
-  font-size: 1.4rem;
-  background: var(--main-color);
-  color: #fff;
-  transition: all 0.5s ease;
-  border:none;
-  box-shadow: 1px 1px 2px;;
+ 
+ 
 }
 
 .btn:active {

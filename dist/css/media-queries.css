@@ -100,6 +100,8 @@ and (orientation : portrait) {
   }
 
     .btn {
+      color:var(--letter-color);
+      background: var(--letter-bg);
     width: 25rem;
     height: 5rem;
   }
@@ -143,7 +145,7 @@ and (orientation : landscape) {
     font-size: 5rem;
     color: var(--main-color);
   }
-  
+
   /* First page categories*/
   #categories ul {
     display: flex;
@@ -219,14 +221,12 @@ and (orientation : landscape) {
     height: 5rem;
   }
 
-  .btn {
+  .reset-btn {
     width: 60rem;
     height: 6rem;
     font-size: 2rem;
   }
-
-  
-  .btn:active {
+  .reset-btn:active {
     padding-bottom: 8rem;
   }
 

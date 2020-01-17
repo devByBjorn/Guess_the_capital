@@ -73,6 +73,20 @@ document.querySelector('.close-btn').addEventListener('click', () => {
   hideOrDisplayByClass('.alert-modal', 'none')
 })
 
+// Activate animation of puzzle
+const animation = () => {
+  const wordPuzzle = document.querySelector('#puzzle')
+
+  if (!wordPuzzle.classList.contains('bounceInDown')) {
+    wordPuzzle.classList.add('bounceInDown')
+  } else {
+    wordPuzzle.classList.remove('bounceInDown')
+    setTimeout(() => {
+      wordPuzzle.classList.add('bounceInDown')
+    }, 30)
+  }
+}
+
 // Desktop keypress guess - if other charachter than a-z or dash('-') - display alert box. 
 window.addEventListener('keypress', (e) => {
   // const specialChar = [229, 228, 246]
@@ -81,7 +95,10 @@ window.addEventListener('keypress', (e) => {
     game.getGuess(guess)
     lightUpKey(e)
     hideOrDisplayByClass('.alert-modal', 'none')
-  } else if (e.charCode === 13) {
+
+    // restart game on enter and tab key
+  } else if (e.charCode === 13 || 9) {
+    animation()
     resetLetters()
     getGame()
   } else {
@@ -91,22 +108,13 @@ window.addEventListener('keypress', (e) => {
   render()
 })
 
-// Reset button 
-document.querySelector('.reset-button').addEventListener('click', () => {
-  const wordPuzzle = document.querySelector('#puzzle')
 
-  // Activate animation of puzzle
-  if (!wordPuzzle.classList.contains('bounceInDown')) {
-    wordPuzzle.classList.add('bounceInDown')
-  } else {
-    wordPuzzle.classList.remove('bounceInDown')
-    setTimeout(() => {
-      wordPuzzle.classList.add('bounceInDown')
-    }, 30)
-  }
+// Reset button 
+document.querySelector('.reset-btn').addEventListener('click', () => {
+  // activate animation
+  animation()
 
   resetLetters()
-
   // If alertbox is displaying - hide
   hideOrDisplayByClass('.alert-modal', 'none')
 
