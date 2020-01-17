@@ -79,27 +79,27 @@ and (orientation : portrait) {
 
   .container {
     padding-top: 10rem;
-    }
+  }
 
     #puzzle {
       padding-top: 20rem;
-    }
+  }
 
 
     #keyboard-container {
       padding-top: 20rem;
-    }
-
-  #keyboard-container p {
-    font-size: 2rem;
   }
 
-  .keyboard-row .letter {
+    #keyboard-container p {
+      font-size: 2rem;
+  }
+
+    .keyboard-row .letter {
     margin: .5rem;
     width: 6rem;
   }
 
-  .btn {
+    .btn {
     width: 25rem;
     height: 5rem;
   }
@@ -136,22 +136,102 @@ and (orientation : landscape) {
 
 
 /*Desktop */
+@media(min-width: 1025px) {
+  /* Nav Light-switch - Icon*/
+  #switch-and-icons .fas {
+    font-weight: 900;
+    font-size: 5rem;
+    color: var(--main-color);
+  }
+  
+  /* First page categories*/
+  #categories ul {
+    display: flex;
+    flex-direction: column;
+  }
 
+  #categories ul li a{
+    font-size: 2rem;
+    padding: 2rem 0;
+  }
 
+  #categories ul li a:hover {
+    background-color: var(--btn-hover);
+  }
 
-/* .alert-content .close-btn:hover,
-.alert-content .close-btn:focus {
-  cursor: pointer;
-} */
+  /*Heading and instructions*/
+  #headings .main-heading {
+    padding: 3rem 0;
+    font-size: 5rem;
+  }
 
-/* 
-#headings .instructions .desktop-text {
-  display: block;
+  #headings .main-heading span {
+    display: block;
+  }
+
+  #headings .instructions {
+    max-width: 102rem;
+    font-size: 2.5rem;
+    padding-bottom: 3rem;
+  }
+
+  #headings .spelling {
+    max-width: 102rem;
+    font-size: 2rem;
+  }
+     
+  #headings .instructions .desktop-text {
+    display: block;
+  }
+
+  #headings .instructions .mobile-text {
+    display: none;
+  }
+
+  .alert-content .close-btn:hover,
+  .alert-content .close-btn:focus {
+    cursor: pointer;
+  } 
+
+  /* Puzzle and status*/
+  #puzzle {
+    max-width: 100rem;
+    margin: 0 auto;
+    padding-top: 8rem;
+    font-size: 5rem;
+    letter-spacing: .8rem;
+    font-weight: 600;
+    padding: 15rem 0 2rem 0;
+  }
+
+  .status {
+    margin: 0 auto;
+    max-width: 40rem;
+    font-size: 3rem;
+  }
+
+  .keyboard-row .letter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem;
+    width: 10rem;
+    height: 5rem;
+  }
+
+  .btn {
+    width: 60rem;
+    height: 6rem;
+    font-size: 2rem;
+  }
+
+  
+  .btn:active {
+    padding-bottom: 8rem;
+  }
+
 }
 
-#headings .instructions .mobile-text {
-  display: none;
-} */
 
 
 

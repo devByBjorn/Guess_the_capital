@@ -91,6 +91,10 @@ a {
   /* box-shadow: var(--box-shadow) */
 }
 
+#categories ul li a:active {
+  padding-bottom: 2rem;
+}
+
 /* Region inner pages and Main style*/
 #main-body {
   min-height: 90vh;
@@ -179,7 +183,6 @@ a {
  
 /* heading */
 #headings {
-  max-width: 40rem;
   padding-top: 3rem;
   margin: 0 auto;
   border-bottom: 1px solid var(--main-color);
@@ -333,6 +336,7 @@ a {
   margin-top: 1rem;
 }
 
+
 .btn {
   display: flex;
   justify-content: center;
@@ -344,8 +348,12 @@ a {
   background: var(--main-color);
   color: #fff;
   transition: all 0.5s ease;
-  border: none;
-  box-shadow: var(--box-shadow);
+  border:none;
+  box-shadow: 1px 1px 2px;;
+}
+
+.btn:active {
+  padding-bottom: 2rem;
 }
 
 /* Footer*/

@@ -11,9 +11,12 @@ class Hangman {
   }
   get statusMessage() {
     if (this.status === 'failed') {
+
       this.getStatusColor('.status', '--status-orange')
-      return `Nice try! The capital was: ${this.word.join('')}`
+      return this.word.join('')
+
     } else if (this.status === 'playing') {
+
       if (this.remainingGuesses === 1) {
         this.getStatusColor('.status', '--alert-red')
         return `${this.remainingGuesses} guess left`
@@ -21,6 +24,7 @@ class Hangman {
         this.getStatusColor('.status', '--status-orange')
         return `${this.remainingGuesses} guesses left`
       }
+
     } else {
       this.getStatusColor('.status', '--status-green')
       return `Good job!`
