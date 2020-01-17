@@ -31,6 +31,10 @@ const getGame = async () => {
       .replace('ú', 'u')
       .replace('í', 'i'))
     console.log(game.word)
+
+    if (game.word.length === 0) {
+      render()
+    }
   } else {
     const regionPuzzle = await getRegion(region)
     game = new Hangman(regionPuzzle.capital
@@ -42,6 +46,10 @@ const getGame = async () => {
       .replace('ú', 'u')
       .replace('í', 'i'))
     console.log(game.word)
+
+    if (game.word.length === 0) {
+      render()
+    }
   }
 
   render()
@@ -90,24 +98,25 @@ const animation = () => {
 // Desktop keypress guess - if other charachter than a-z or dash('-') - display alert box. 
 window.addEventListener('keypress', (e) => {
   // const specialChar = [229, 228, 246]
-  if (e.charCode >= 97 && e.charCode <= 122) {
+
+  // restart game on enter and tab key
+  if (e.charCode === 13 || e.charCode === 32) {
+    animation()
+    resetLetters()
+    getGame()
+
+  } else if (e.charCode >= 97 && e.charCode <= 122) {
     const guess = String.fromCharCode(e.charCode)
     game.getGuess(guess)
     lightUpKey(e)
     hideOrDisplayByClass('.alert-modal', 'none')
 
-    // restart game on enter and tab key
-  } else if (e.charCode === 13 || e.charCode === 9) {
-    animation()
-    resetLetters()
-    getGame()
   } else {
     hideOrDisplayByClass('.alert-modal', 'inline-block')
   }
 
   render()
 })
-
 
 // Reset button 
 document.querySelector('.reset-btn').addEventListener('click', () => {
