@@ -58,7 +58,7 @@ and (orientation : portrait) {
     width: 5.5rem;
   }
 
-  .btn {
+  .reset-btn {
     width: 30rem;
     padding: 1.5rem 0;
   }
@@ -70,8 +70,6 @@ and (orientation : portrait) {
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : portrait) {
-
-
   #categories ul {
     display: flex;
     flex-direction: column;
@@ -81,27 +79,26 @@ and (orientation : portrait) {
     padding-top: 10rem;
   }
 
-    #puzzle {
+  #puzzle {
       padding-top: 20rem;
   }
 
-
-    #keyboard-container {
+  #keyboard-container {
       padding-top: 20rem;
   }
 
-    #keyboard-container p {
+  #keyboard-container p {
       font-size: 2rem;
   }
 
-    .keyboard-row .letter {
+  .keyboard-row .letter {
     margin: .5rem;
     width: 6rem;
   }
 
-    .btn {
-      color:var(--letter-color);
-      background: var(--letter-bg);
+  .reset-btn {
+    color:var(--letter-color);
+    background: var(--letter-bg);
     width: 25rem;
     height: 5rem;
   }
@@ -130,7 +127,8 @@ and (orientation : landscape) {
     width: 8rem;
     height: 5rem;
   }
-  .btn {
+
+  .reset-btn {
     width: 25rem;
     height: 5rem;
   }
