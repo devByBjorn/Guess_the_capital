@@ -32,10 +32,6 @@ const getGame = async () => {
       .replace('í', 'i'))
     console.log(game.word)
 
-    // Why do I get no word at all att some fetches? 
-    if (game.word.length === 0) {
-      render()
-    }
   } else {
     const regionPuzzle = await getRegion(region)
     game = new Hangman(regionPuzzle.capital
@@ -47,11 +43,6 @@ const getGame = async () => {
       .replace('ú', 'u')
       .replace('í', 'i'))
     console.log(game.word)
-
-    // Why do I get no word at all att some fetches? 
-    if (game.word.length === 0) {
-      render()
-    }
   }
 
   render()

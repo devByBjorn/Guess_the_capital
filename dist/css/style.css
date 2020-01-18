@@ -98,7 +98,7 @@ a {
 /* Region inner pages and Main style*/
 #main-body {
   min-height: 90vh;
-  padding: 1rem 2rem;
+  padding: 3rem 2rem;
   margin: 1rem auto;
 } 
 
@@ -191,13 +191,11 @@ a {
 
 #headings .main-heading {
   font-size: 3rem;
-  letter-spacing: .5rem;
   padding-bottom: 1rem;
 }
 
 #headings .main-heading span {
   font-size: 1.5rem;
-  letter-spacing: .2rem;
 }
 
 #headings .instructions {
@@ -293,7 +291,7 @@ a {
   /* display: flex; */
   flex-direction: column;
   align-items: center;
-  padding-top: 10rem;
+  padding-top: 5rem;
 }
 
 #keyboard-container p {

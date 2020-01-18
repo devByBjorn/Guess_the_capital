@@ -5,7 +5,11 @@
   display: inline-block;
   width: 4.5rem;
   height: 1.5rem;
-  margin-left: 1.8rem;
+  margin-left: 2rem;
+}
+
+#landing-switch {
+  margin-left: 0;
 }
 
 /* Hide default HTML checkbox */
@@ -17,7 +21,7 @@
 
 /* The slider */
 .slider {
-  position: absolute;
+  position: absolute;s
   cursor: pointer;
   top: 0;
   left: 0;
